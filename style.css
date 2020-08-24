@@ -1,0 +1,135 @@
+:root {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: hsl(0, 0%, 98%);
+}
+
+.container {
+    margin: 5.5em 2em;
+}
+
+.heading {
+    margin: 4em 0.125em;
+    text-align: center;
+    padding-bottom: 0.275em;
+}
+
+.heading h2 {
+    margin: 4px 0px;
+    color: hsl(234, 12%, 34%);
+}
+
+.first-head {
+    font-weight: 200;
+}
+
+.heading p {
+    font-size: 15px;
+    color:  hsl(229, 6%, 66%);
+}
+
+.card {
+    background-color: white;
+    box-sizing: border-box;
+    width: 19.5em;
+    margin-bottom: 1.5em;
+    padding: 0.5em 1.75em 1.25em;
+    box-shadow: 0.5px 14px 20px -6px hsl(229, 6%, 66%);
+    border-radius: 7px;
+    text-align: right;
+}
+
+.card h3 {
+    color: hsl(234, 12%, 34%);
+    margin-bottom: 0.25em;
+    text-align: left;
+}
+
+.card p {
+    font-size: 13px;
+    color:  hsl(229, 6%, 66%);
+    margin-top: 0.25em;
+    padding-bottom: 1.25em;
+    line-height: 24px;
+    text-align: left;
+}
+
+.card img {
+    width: 22%;
+}
+
+.first {
+    border-top: 4px solid hsl(180, 62%, 55%);
+}
+
+.second {
+    border-top: 4px solid hsl(0, 78%, 62%);
+}
+
+.third {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.fourth {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.attribution {
+    font-size: 11px; text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 992px) {
+    .container {
+        margin: 2em 2em;
+    }
+
+    .heading {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .heading h2 {
+        font-size: 2.25em;
+    }
+
+    .card{
+        width: 22em;
+    }
+
+    .card-board {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-rows: auto auto;
+        justify-content: center;
+        grid-template-areas:
+        "a b d"
+        "a c d";
+    }
+
+    .first {
+        grid-area: a;
+        align-self: center;
+    }
+
+    .second {
+        grid-area: b;
+        margin-bottom: 0;
+    }
+
+    .third {
+        grid-area: c;
+    }
+
+    .fourth {
+        grid-area: d;
+        align-self: center;
+    }
+}
+        
